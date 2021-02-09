@@ -1,0 +1,90 @@
+/*Comment*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: White;
+  background-color: black;
+  font-family: Tahoma;
+  
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  transition: color 200ms ease-in;
+  text-decoration: none;
+}
+
+/*psuedo selector - user interact */
+
+a:hover {
+  color: grey;
+}
+
+img {
+  width: 100%;
+}
+
+/*id and class selector*/
+
+#container {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*nested selector */
+#header ul {
+
+  display: flex;
+}
+
+#header li {
+
+  margin-left: 1em;
+}
+
+#header a {
+
+  font-size: 1em;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  text-align: center;
+}
+
+.project a {
+  font-size: 1.25em;
+  
+  
+}
+
+/* about */
+
+#portrait {
+  width: 600px;
+  float: right;
+}
+
+#about p {
+  font-size: 1.5em;
+}
