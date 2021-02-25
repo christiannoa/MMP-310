@@ -24,29 +24,29 @@ function draw() {
 	/* Character movement */
 	/* Use up, down, left, and/or right arrow to move charcter around canvas */
 
-	var cnMad = false;
+	var cnIsMad = false;
 
 	if (keyIsDown(RIGHT_ARROW)) {
 		cnX += cnSpeed;
-		cnMad = true;
+		cnIsMad = true;
 	}
 
 	if (keyIsDown(LEFT_ARROW)) {
 		cnX -= cnSpeed;
-		cnMad = true;
+		cnIsMad = true;
 	}
 	
 	if (keyIsDown(UP_ARROW)) {
 		cnY -= cnSpeed;
-		cnMad = true;
+		cnIsMad = true;
 	}
 
 	if (keyIsDown(DOWN_ARROW)) {
 		cnY += cnSpeed;
-		cnMad = true;
+		cnIsMad = true;
 	}
 
-	if (cnMad) {
+	if (cnIsMad) {
 		image(cnMad, cnX, cnY);
 	} else {
 		image(cnHappy, cnX, cnY);
