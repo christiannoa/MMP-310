@@ -19,6 +19,7 @@ function setup() {
 
 function draw() {
 	background(255);
+	
 
 	/* logic + event */
 	/* Character movement */
